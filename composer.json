@@ -1,8 +1,11 @@
 {
-	"name": "addwiki/addwiki",
+	"name": "addwiki/addwiki-cli",
 	"type": "library",
-	"description": "A Mediawiki bot lib",
-	"keywords": ["Mediawiki"],
+	"description": "A Mediawiki CLI package",
+	"keywords": [
+		"Mediawiki"
+	],
+	"version": "0.1-dev",
 	"license": "GPL-2.0+",
 	"authors": [
 		{
@@ -10,19 +13,20 @@
 		}
 	],
 	"require": {
-		"symfony/console": "~3.0",
-		"symfony/yaml": "~3.0",
-		"addwiki/mediawiki-commands" : "dev-master",
-		"addwiki/wikimedia-commands" : "dev-master"
+		"addwiki/mediawiki-commands": "~0.1",
+		"addwiki/wikimedia-commands": "~0.1",
+		"symfony/console": "~4.0",
+		"symfony/yaml": "~4.0"
 	},
-	"minimum-stability":"dev",
-	"prefer-stable": true,
 	"autoload": {
 		"psr-4": {
 			"Addwiki\\": "src/"
 		}
 	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
 	"bin": [
-		"aww"
+		"aww",
+		"awwd"
 	]
 }
